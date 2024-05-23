@@ -23,6 +23,9 @@ public class TIC_TAC_TOE
 	  System.out.print("Player "+player+" enter: ");
 	  int r=sc.nextInt();
 	  int c= sc.nextInt();
+	  if(r>2 || c>2)System.out.println("Invalid position try again");
+	  else
+	  {
 	  if(board[r][c]==' ')
 	  {
 		  board[r][c]=player;
@@ -40,6 +43,7 @@ public class TIC_TAC_TOE
 	  else
 	  {
 		  System.out.println("invalid move try again");
+	  }
 	  }
 	  
 	  for(int i=0;i<=2;i++)
